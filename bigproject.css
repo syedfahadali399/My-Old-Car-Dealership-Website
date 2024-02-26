@@ -1,0 +1,869 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background-color: #5f58a4; */
+    background-repeat: repeat-y;
+    object-fit: fill;
+    background-position: center center;
+    background-size: max(1600px, 100vw);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+.header{
+    padding: 50px;
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .header{
+        width: 147vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header{
+        width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .header{
+        width: 398vw;
+    }
+}
+
+/* Animation */
+
+.paragraph{
+    animation: slidein 0.75s ease-in 0.1s infinite alternate-reverse both;
+    background-color: #2424af;
+    border-radius: 90px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 1.75em;
+    font-weight: 500;
+    letter-spacing: 0.7rem;
+    padding: 1em 2em 1.1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin-top: 100px;
+}
+
+@keyframes slidein {
+    0% {
+        bottom: 0;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    100%{
+        bottom: 50px;
+        box-shadow: 0 60px 60px rgba(0,0,0,0.1); 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .paragraph{
+        width: 100vw;
+    }   
+}
+
+@media only screen and (max-width: 480px) {
+    .paragraph{
+        width: 160vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .paragraph{
+        width: 324vw;
+    }
+}
+
+/* Nav Or Footer */
+
+footer , nav{
+    display: flex;
+    background-color: black !important;
+}
+
+footer a, nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    float: left;
+    text-align: center;
+}
+
+.nav{
+    background-color: #262626;
+}
+
+/* .nav{
+    position: sticky;
+    top: 0px;
+} */
+
+.menu-btn:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+#a{
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+#a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 700px){
+    footer , nav{
+         flex-direction: column;
+         padding: 10px 0px;
+     }
+ 
+     .flex-align-right{
+         margin-left: 0;
+     }
+}
+
+#a:hover:after{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .nav{
+        width: 147vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav{
+        width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .nav{
+        width: 398vw;
+    }
+}
+
+/* Arrow Key */
+
+.arrow{
+    position: relative;
+    font-size: 48px;
+    top: 51rem;
+    left: 114rem;
+}
+
+.arrow i{
+    position: fixed;
+    border: 1px solid black;
+    padding: 9px 16px;
+    border-radius: 48px;
+    color: #ddd;
+    background-color: black;
+}
+
+/* Tesla Pic */
+
+.tesla{
+    background-image: url(pics/18.jpg);
+    width: 100%;
+    height: 90vh;
+    margin-top: 96px;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-size: max(1600px, 100vw);
+}
+
+@media only screen and (max-width: 768px) {
+    .tesla{
+        width: 147vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .tesla{
+        width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .tesla{
+        width: 398vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #button{
+        margin-top: -33px;
+    }
+}
+
+.tesla2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.tesla h1{
+    color: white;
+    font-size: 96px;
+    text-align: center;
+    margin-bottom: 0px;
+    /* position: relative;
+    top: 7rem;
+    left: 7rem; */
+}
+
+.tesla h3{
+    color: white;
+    font-size: 48px;
+    margin-top: 0px;
+    /* position: relative;
+    top: 4rem;
+    right: 29.5rem; */
+}
+
+.tesla button{
+    border: none;
+    border-radius: 24px;
+    color: #ddd;
+    background-color: #ff004f;
+    cursor: pointer;
+    /* position: relative;
+    top: 12rem;
+    right: 47rem; */
+}
+
+.seperation{
+    height: 8px;
+    background-color: rgba(59, 59, 59, 0.479);
+}
+
+@media screen and (max-width: 768px) {
+    .seperation{
+        width: 147vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .seperation{
+        width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .seperation{
+        width: 398vw;
+    }
+}
+
+/* Interior and Specification */
+
+main{
+    flex: 100%;
+    background-color: white;
+}
+
+section{
+    text-align: center;
+    padding-top: 40px;
+}
+
+@keyframes fahad {
+    from{
+        background-color: rgb(38, 0, 253);
+    }
+    to{
+        background-color: #1299bb;
+    }
+    
+}
+
+.video span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.category span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.category{
+    margin-top: 48px;
+}
+
+.img1{
+    border-radius: 50px;
+}
+
+.carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+.carousel-cell video{
+    max-width: 100%;
+}
+
+.carousel-cell img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .sec{
+        width: 147vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sec{
+        width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .sec{
+        width: 398vw;
+    }
+}
+
+/* Modication */
+
+.review span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.review{
+    margin-top: 48px;
+}
+
+iframe{
+    padding: 0px 5px;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 40px;
+    color: black;
+    text-decoration: double;
+}
+
+@media screen and (max-width: 768px) {
+    .modification{
+        width: 147vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modification{
+        width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .modification{
+        width: 398vw;
+    }
+}
+
+/* Car Price Css */
+
+h3{
+    text-align: center;
+}
+
+.collection{
+    margin-top: 48px;
+}
+
+img{
+    padding: 0px 20px 0px 20px;
+}
+
+.collection span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.grid-container{
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    padding: 6px;
+    justify-content: center;
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.car{
+    border: 2px solid black;
+    border-radius: 16px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.img{
+    border-radius: 111px;
+    margin: 32px;
+}
+
+.ol{
+    color: blue;
+    font-weight: 900;
+    text-align: left;
+    list-style-type: circle;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 80px 125px 115px 60px;
+    padding-left: 112px;
+}
+
+.div{
+    display: grid;
+    grid-template-columns: 80px 125px 115px 60px;
+    margin-top: 8px;
+}
+
+.a{
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 10px 40px;
+    text-decoration: none;
+    animation: fahad3 2s ease-in-out 1s infinite alternate-reverse;
+    position: relative;
+    left: 73px;
+}
+
+.input{
+    animation: fahad2 2s ease-in-out 1s infinite alternate-reverse;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 24px;
+    position: relative;
+    left: 73px;
+}
+
+@keyframes fahad2 {
+    from{
+        background-color: #133b85;
+    }
+    to{
+        background-color: rgb(18, 145, 124);
+    }
+    
+}
+
+@keyframes fahad3 {
+    from{
+        background-color: #851331;
+    }
+    to{
+        background-color: rgb(139, 142, 12);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container{
+        width: 147vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container{
+        width: 200vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .grid-container{
+        width: 398vw;
+    }
+}
+
+/* Foundation */
+
+h3{
+    font-size: 24px;
+}
+
+.founder span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.founder{
+    margin-top: 48px;
+}
+
+.profile{
+    border-radius: 75%;
+}
+
+.name{
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+    text-decoration-color: darkcyan;
+    text-decoration-thickness: 3px;
+    color: cyan;
+    text-shadow: 3px 3px 5px cornflowerblue;
+}
+
+.link a{
+    /* background-color: rgb(125 125 125 / 25%); */
+    background-color: cornflowerblue;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    text-decoration: none;
+    font-size: 1.25em;
+    transition: transforms 0.25s;
+}
+
+.link a:hover{
+    background-color: #133b85;
+}
+
+.link i{
+    transition: transform 0.25s;
+}
+
+.link i:hover{
+    transform: translateY(-10px);
+}
+
+.link a i{
+    margin: 5px;
+}
+
+.yt-studio{
+    color: #FF0000;
+}
+
+.insta{
+    color: #dd2a7b;
+}
+
+.about{
+    margin: 30px;
+    padding: 0px 10px;
+    font-size: 1.25em;
+    color: rgb(15, 6, 6);
+    text-decoration: underline;
+    text-decoration-color: #133b85;
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+    text-indent: 45px;
+    text-shadow: 2px 2px 4px blue;
+    outline-offset: 18px;
+    border-radius: 8px;
+    outline: 2px solid blue;
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 75px;
+}
+
+@media screen and (max-width: 768px) {
+    .foundation{
+        width: 147vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .foundation{
+        width: 200vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .foundation{
+        width: 398vw;
+    }
+}
+
+/* Review */
+
+.review-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 24px 24px;
+    gap: 24px;
+    margin: 24px;
+}
+
+.review-1 p{
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 16px;
+    color: white;
+}
+
+.review-1 span{
+    border: 1px solid white;
+    border-radius: 12px;
+    height: 400px;
+    width: 400px;
+    background-color: #262626;
+}
+
+.review-1 span i{
+    color: yellow;
+    font-size: 36px;
+    text-align: center;
+    padding: 0px 3px;
+    margin-left: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .review-1{
+        width: 141vw;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .review-1{
+        width: 200vw;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .review-1{
+        width: 396vw;
+        justify-content: center;
+    }
+}
+
+/* Contact Css */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 32px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-left .paragraph{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icon a i{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #262626;
+    display: inline-block;
+    margin-top: 25px;
+    transition: transform 0.5s;
+}
+
+.social-icon a i:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right{
+    flex-basis: 60%;
+    margin-right: 88px;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #contact{
+        width: 147vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contact{
+        width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #contact{
+        width: 400vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .row{
+        justify-content: center;
+    }
+}
+
+/* Hr */
+
+@media only screen and (max-width: 768px) {
+    .hr{
+        width: 100vw;
+    }   
+}
+
+@media only screen and (max-width: 480px) {
+    .hr{
+        width: 160vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hr{
+        width: 324vw;
+    }
+}
+
+/* .first{
+    display: flex;
+    grid-template-columns: auto auto auto;
+    padding: 25px;
+    justify-content: center;
+    gap: 5%;
+    image-resolution: 20px;
+} */
