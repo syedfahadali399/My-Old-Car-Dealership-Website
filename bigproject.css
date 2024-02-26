@@ -262,9 +262,18 @@ footer a, nav a{
     color: #ddd;
     background-color: #ff004f;
     cursor: pointer;
+    text-decoration: none;
     /* position: relative;
     top: 12rem;
     right: 47rem; */
+}
+
+.tesla a button{
+    text-decoration: none;
+}
+
+#button{
+    text-decoration: none !important;
 }
 
 .seperation{
