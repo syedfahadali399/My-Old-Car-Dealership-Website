@@ -562,7 +562,45 @@ img{
 
 @media screen and (max-width: 480px) {
     .grid-container{
+        padding: 6px;
+        justify-content: center;
+        gap: 5%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
         width: 100vw;
+    }
+    .car{
+        margin: 0px;
+        margin-bottom: 12px;
+    }
+    .img{
+        margin: 0px;
+        width: 380px;
+        height: 240px;
+        border-radius: 80px;
+    }
+    .ol{
+        color: blue;
+        font-weight: 900;
+        text-align: left;
+        list-style-type: circle;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 70px 105px 95px 0px;
+        padding-left: 40px;
+    }
+    .div{
+        display: grid;
+        grid-template-columns: 70px 105px 95px 0px;
+        margin-top: 8px;
+    }
+    .input{
+        width: 100px;
+    }
+    .a{
+        padding: 10px 30px;
     }
 }
 
@@ -652,7 +690,6 @@ h3{
     text-decoration-color: #133b85;
     font-weight: bold;
     text-decoration-thickness: 3px;
-    text-indent: 45px;
     text-shadow: 2px 2px 4px blue;
     outline-offset: 18px;
     border-radius: 8px;
@@ -734,7 +771,7 @@ h3{
         margin-left: 6px;
     }
     .review-1 span{
-        height: 440px;
+        height: 480px;
     }
 }
 
@@ -854,6 +891,9 @@ form .btn2{
     }
     .contact-left{
         text-align: center;
+    }
+    .btn2{
+        display: flex;
     }
 }
 
