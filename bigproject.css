@@ -32,7 +32,7 @@ body{
 
 @media only screen and (max-width: 480px) {
     .header{
-        width: 207vw;
+        width: 100vw;
     }
 }
 
@@ -82,7 +82,9 @@ body{
 
 @media only screen and (max-width: 480px) {
     .paragraph{
-        width: 160vw;
+        width: 100vw;
+        position: relative;
+        right: 50px;
     }
 }
 
@@ -162,7 +164,7 @@ footer a, nav a{
 
 @media screen and (max-width: 480px) {
     .nav{
-        width: 207vw;
+        width: 100vw;
     }
 }
 
@@ -215,7 +217,7 @@ footer a, nav a{
 
 @media only screen and (max-width: 480px) {
     .tesla{
-        width: 207vw;
+        width: 100vw;
     }
 }
 
@@ -289,7 +291,7 @@ footer a, nav a{
 
 @media screen and (max-width: 480px) {
     .seperation{
-        width: 207vw;
+        width: 100vw;
     }
 }
 
@@ -369,7 +371,11 @@ section{
 
 @media screen and (max-width: 480px) {
     .sec{
-        width: 207vw;
+        width: 100vw;
+    }
+    .iframe{
+        width: 100vw;
+        display: flex;
     }
 }
 
@@ -414,6 +420,9 @@ h2{
 @media screen and (max-width: 480px) {
     .modification{
         width: 207vw;
+    }
+    .review{
+        width: 100vw;
     }
 }
 
@@ -542,7 +551,7 @@ img{
 
 @media screen and (max-width: 480px) {
     .grid-container{
-        width: 200vw;
+        width: 100vw;
     }
 }
 
@@ -650,7 +659,7 @@ h3{
 
 @media screen and (max-width: 480px) {
     .foundation{
-        width: 200vw;
+        width: 100vw;
     }
 }
 
@@ -703,7 +712,7 @@ h3{
 
 @media screen and (max-width: 480px) {
     .review-1{
-        width: 200vw;
+        width: 90vw;
         justify-content: center;
     }
 }
@@ -820,7 +829,7 @@ form .btn2{
 
 @media screen and (max-width: 480px) {
     #contact{
-        width: 207vw;
+        width: 100vw;
     }
 }
 
@@ -858,7 +867,7 @@ form .btn2{
 
 @media only screen and (max-width: 480px) {
     .hr{
-        width: 160vw;
+        width: 100vw;
     }
 }
 
