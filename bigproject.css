@@ -374,8 +374,12 @@ section{
         width: 100vw;
     }
     .iframe{
-        width: 100vw;
+        width: 80vw;
         display: flex;
+        margin-bottom: 12px;
+    }
+    .video{
+        width: 80vw;
     }
 }
 
@@ -661,6 +665,10 @@ h3{
     .foundation{
         width: 100vw;
     }
+    .linka{
+       position: relative;
+       top: 18px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -714,6 +722,9 @@ h3{
     .review-1{
         width: 90vw;
         justify-content: center;
+    }
+    .review-1 span i{
+        margin-left: 6px;
     }
 }
 
