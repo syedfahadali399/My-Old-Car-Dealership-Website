@@ -219,6 +219,13 @@ footer a, nav a{
     .tesla{
         width: 100vw;
     }
+    .tesla2p{
+        font-size: 24px;
+    }
+    .tesla2 h3{
+        font-weight: 300;
+    }
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -239,7 +246,7 @@ footer a, nav a{
     flex-wrap: wrap;
 }
 
-.tesla h1{
+.tesla2p{
     color: white;
     font-size: 96px;
     text-align: center;
@@ -270,7 +277,7 @@ footer a, nav a{
     right: 47rem; */
 }
 
-.tesla a button{
+.tesla2 button{
     text-decoration: none;
 }
 
@@ -350,7 +357,7 @@ section{
 }
 
 .carousel-cell {
-    width: 66%;
+    width: 90%;
     margin-right: 10px;
     border-radius: 5px;
   }
@@ -377,9 +384,9 @@ section{
         width: 80vw;
         display: flex;
         margin-bottom: 12px;
-    }
-    .video{
-        width: 80vw;
+        flex-direction: column;
+        border-radius: 16px;
+        margin-left: 20px;
     }
 }
 
@@ -726,6 +733,9 @@ h3{
     .review-1 span i{
         margin-left: 6px;
     }
+    .review-1 span{
+        height: 440px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -804,10 +814,10 @@ h3{
     background: #ff004f;
 }
 
-.contact-right{
+/* .contact-right{
     flex-basis: 60%;
     margin-right: 88px;
-}
+} */
 
 .contact-right form{
     width: 100%;
@@ -840,7 +850,10 @@ form .btn2{
 
 @media screen and (max-width: 480px) {
     #contact{
-        width: 100vw;
+        width: 90vw;
+    }
+    .contact-left{
+        text-align: center;
     }
 }
 
