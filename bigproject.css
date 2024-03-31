@@ -209,6 +209,55 @@ footer a, nav a{
     background-size: max(1600px, 100vw);
 }
 
+.tesla2 p:nth-child(3){
+    text-align: center;
+}
+
+button {
+    background: transparent;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: 20px 30px;
+    perspective: 30rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(320deg, rgba(0, 140, 255, 0.678), rgba(128, 0, 128, 0.308));
+    z-index: 1;
+    transition: background 3s;
+}
+  
+button:hover::before {
+    animation: rotate 1s;
+    transition: all .5s;
+}
+  
+@keyframes rotate {
+    0% {
+      transform: rotateY(180deg);
+    }
+  
+    100% {
+      transform: rotateY(360deg);
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .tesla{
         width: 147vw;
@@ -234,11 +283,11 @@ footer a, nav a{
     }
 }
 
-@media only screen and (max-width: 320px) {
+/* @media only screen and (max-width: 320px) {
     #button{
         margin-top: -33px;
     }
-}
+} */
 
 .tesla2{
     display: flex;
@@ -263,26 +312,6 @@ footer a, nav a{
     /* position: relative;
     top: 4rem;
     right: 29.5rem; */
-}
-
-.tesla button{
-    border: none;
-    border-radius: 24px;
-    color: #ddd;
-    background-color: #ff004f;
-    cursor: pointer;
-    text-decoration: none;
-    /* position: relative;
-    top: 12rem;
-    right: 47rem; */
-}
-
-.tesla2 button{
-    text-decoration: none;
-}
-
-#button{
-    text-decoration: none !important;
 }
 
 .seperation{
@@ -732,28 +761,70 @@ h3{
     margin: 24px;
 }
 
-.review-1 p{
-    font-size: 24px;
-    font-weight: 600;
-    margin-left: 16px;
-    color: white;
-}
-
-.review-1 span{
-    border: 1px solid white;
-    border-radius: 12px;
-    height: 400px;
+.card {
     width: 400px;
-    background-color: #262626;
-}
+    height: 450px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 6px 6px;
+  }
+  
+.card span {
+    z-index: 1;
+    color: white;
+    font-size: 28px;
+  }
 
-.review-1 span i{
+.card p{
+    margin-left: 6px;
+  }
+
+.card span i{
     color: yellow;
     font-size: 36px;
     text-align: center;
     padding: 0px 3px;
-    margin-left: 12px;
+    margin-left: 6px;
 }
+
+  
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+  
+@keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+.card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+}  
+  /* .card:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  } */  
 
 @media screen and (max-width: 768px) {
     .review-1{
@@ -786,17 +857,20 @@ h3{
 
 .row{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin-left: 32px;
 }
 
 .contact-left{
-    flex-basis: 35%;
+    flex-basis: 50%;
 }
 
 .contact-left .paragraph{
     margin-top: 30px;
+}
+
+.contact-left p{
+    font-size: 24PX;
 }
 
 .contact-left p i{
@@ -806,7 +880,7 @@ h3{
 }
 
 .sub-title{
-    font-size: 60px;
+    font-size: 100px;
     font-weight: 600;
     color: black;
 }
@@ -830,53 +904,170 @@ h3{
     transform: translateY(-5px);
 }
 
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.5s;
-}
-
-.btn:hover{
-    background: #ff004f;
-}
-
-.btn2{
+.button2 {
     display: inline-block;
-    background: #ff004f;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(91,91,150,1) 0%, rgba(0,212,255,1) 100%);
+    border: 1px solid #f5f5f5;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    margin-top: 24px;
 }
-
-/* .contact-right{
-    flex-basis: 60%;
-    margin-right: 88px;
-} */
-
-.contact-right form{
-    width: 100%;
+  
+.button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c500, inset -4px -4px 12px #ffffff02;
+}
+  
+.button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+  
+.button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+  
+.button2:hover {
+    color: #ffffff;
+    border: 1px solid #009087;
+}
+  
+.button2:hover:before {
+    top: -35%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+  
+.button2:hover:after {
+    top: -45%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
     font-size: 18px;
-    border-radius: 6px;
 }
 
-form .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
+.form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    background-color: #0a192f;
+    border-radius: 20px;
+    width: 700px;
+}
+  
+.form-heading {
+    text-align: center;
+    margin: 2em;
+    color: #64ffda;
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+}
+  
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+  
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+}
+  
+.sendMessage-btn {
     cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #64ffda;
+    font-weight: bold;
+    outline: 1px solid #64ffda;
+    transition: all ease-in-out 0.3s;
+}
+  
+.sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #64ffda;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+  
+.form-card1 {
+    background-image: linear-gradient(163deg, #64ffda 0%, #64ffda 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+    margin-bottom: 32px;
+}
+  
+.form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+}
+  
+.form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+  
+.form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -940,12 +1131,3 @@ form .btn2{
         width: 324vw;
     }
 }
-
-/* .first{
-    display: flex;
-    grid-template-columns: auto auto auto;
-    padding: 25px;
-    justify-content: center;
-    gap: 5%;
-    image-resolution: 20px;
-} */
